@@ -19,7 +19,7 @@ const NewLetter = dynamic(
 
 
 const Products = dynamic(
-  () => import('../components/Products'),
+  () => import('../components/products'),
   { ssr: false }
 )
 
