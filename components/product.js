@@ -27,14 +27,14 @@ function Product({title,image,subtitle,colors}) {
             <div className={styles.left}>
                 <h1>{title}</h1>
                 <h2>{subtitle}</h2>
-                <div className={styles.colors}>{
-                    colors.map((v,i)=><i style={{background:v}} key={i}></i>)
-                }</div>
             </div>
             <div className={styles.right}>
                 <div className={styles.button}>Afficher</div>
             </div>
         </div>
+        <div className={styles.colors}>{
+                    colors.map((v,i)=><i style={{background:v}} key={i}></i>)
+        }</div>
     </div> );
 }
 

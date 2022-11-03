@@ -10,30 +10,30 @@ function Products({items}) {
             <h3>Produits les plus populaires</h3>
             <Container>
                 <Row>
-                    <Col xs={6}  sm={3}>
+                    <Col lg={6}  xl={3}>
                         <Product/>
                     </Col>
-                    <Col xs={6}  sm={3}>
+                    <Col lg={6}  xl={3}>
                         <Product/>
                     </Col>
-                    <Col xs={6}  sm={3}>
+                    <Col lg={6}  xl={3}>
                         <Product/>
                     </Col>
-                    <Col xs={6}  sm={3}>
+                    <Col lg={6}  xl={3}>
                         <Product/>
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={6}  sm={3}>
+                    <Col lg={6}  xl={3}>
                         <Product/>
                     </Col>
-                    <Col xs={6}  sm={3}>
+                    <Col lg={6}  xl={3}>
                         <Product/>
                     </Col>
-                    <Col xs={6}  sm={3}>
+                    <Col lg={6}  xl={3}>
                         <Product/>
                     </Col>
-                    <Col xs={6}  sm={3}>
+                    <Col lg={6}  xl={3}>
                         <Product/>
                     </Col>
                 </Row>

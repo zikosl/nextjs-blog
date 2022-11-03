@@ -1,12 +1,10 @@
 .container{
-    padding: 10px;
     display: flex;
     flex-direction: column;
     flex: 1;
     justify-content: center;
     align-items: center;
-    margin-right: 2em;
-    margin-left: 2em;
+
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -44,8 +42,9 @@
 
 .colors{
     display: flex;
+    flex: 1;
     flex-direction: row;
-    align-self: flex-start;
+
 }
 .colors i{
     display: flex;
@@ -71,3 +70,10 @@
     border-radius: 17px;
 }
 
+@media (min-width: 1200px) {
+    .container{
+        padding: 10px;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
