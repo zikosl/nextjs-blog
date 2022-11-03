@@ -1,0 +1,97 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex:1;
+    padding: 1em;
+}
+.header nav{
+    display: flex;
+    flex-direction: row;
+}
+.navitem p{
+    font-size: max(15px,.8vw);
+    color: #707070;
+    text-transform: uppercase;
+    margin-right: 1em;
+    margin-left: 1em;
+    font-weight: 400;
+    transition: all .5s;
+}
+.header>div{
+    display: flex;
+    flex: 1;
+}
+.navitem {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navitem:hover p{
+    color: #0756FF;
+}
+.navitem i{
+    width: 80%;
+    height: 3px;
+    display: block;
+    background: #0756FF;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+.navitem:hover i{
+    transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+    .header .nav1{
+        display: none;
+    }
+    .header .animate{
+        display: flex !important;
+    }
+    .image{
+        max-width:120px !important;
+        height:60px !important;
+    }
+}
+
+.image{
+    max-width:180px;
+    height:80px;
+    position:relative
+}
+.animate{
+    display: none !important;
+    flex: 1;
+    margin-left: auto;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 3;
+}
+.nav2.active{
+    transform: scaleX(100%) !important;
+}
+.header .nav2{
+    flex-direction: column;
+    position: absolute;
+    background-color:#143578;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+
+    transition: all .5s;
+}
+.header .nav2 p{
+    color: white;
+}
+
+.header .nav2 i{
+    
+}

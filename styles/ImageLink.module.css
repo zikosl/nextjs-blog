@@ -1,0 +1,30 @@
+.container{
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #226EAE;
+}
+
+.container :global .slick-dots{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .image{
+        width:120px !important;
+        height:60px !important;
+    }
+}
+
+.image{
+    width:15vw;
+    height:7.5vw;
+    position:relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

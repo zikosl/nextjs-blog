@@ -1,0 +1,46 @@
+.leftdot
+{
+    width:50px;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 2;
+    cursor: pointer;
+    transition: all .5s;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.rightdot
+{
+    width:50px;
+    height:100%;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index: 2;
+    cursor: pointer;
+    transition: all .5s;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.rightdot:hover,.leftdot:hover{
+    background: #ffffff66;
+}
+.dot{
+    width: 20px  !important;
+    height: 4px !important;
+    border-radius: 1px;
+    margin-right: 4px;
+    margin-left: 4px;
+    background: white;
+}
+.dots{
+    background: #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}

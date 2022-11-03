@@ -1,0 +1,14 @@
+.container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.container>h3{
+    font-size:  max(40px,1.2vw);
+    color: black;
+    margin-left: 2em;
+    margin-top: 2em;
+}

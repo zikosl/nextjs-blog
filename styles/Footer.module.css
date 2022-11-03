@@ -1,0 +1,122 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    margin: 0;
+    padding-top: 8em;
+    justify-content:center;
+    background: linear-gradient(0deg, #00000088, #00000088 ), url(/images/footer.png);
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text,.logo,.empty{
+    margin-right: 1em;
+    margin-left:1em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+.left h1{
+    font-size: max(16px,1vw);
+    font-weight: 500;
+    margin-top: .6em;
+    text-transform: capitalize;
+    margin-bottom: .6em;
+}
+
+
+.left p{
+    font-size: max(16px,1vw);
+    font-weight: 300;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.email{
+    flex-direction: row;
+    display: flex;
+    margin: 2em 6vw;
+}
+
+.email input{
+    background: rgba(255, 255, 255, .22);
+    border:1px solid white;
+    border-radius: 14px;
+    display: flex;
+    flex: 1;
+    margin-right: 2em;
+}
+
+.button{
+    padding: 20px 52px;
+    background:transparent ;
+    font-weight: 600;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 17px;
+    border: 1px solid white
+}
+
+
+
+.bottom{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.icons{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-bottom: 2em;
+}
+.icons svg{
+    margin-right: .3em;
+    margin-left: .3em;
+    cursor:pointer;
+}
+
+@media (max-width: 836px) {
+    .empty{
+        display: none !important;
+    }
+}
+
+@media (max-width: 636px) {
+    .left{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .text h1{
+        text-align: center;
+    }
+    .text h1{
+        line-height: 1.5em;
+    }
+}
